@@ -43,10 +43,9 @@ const App = () => {
         <Routes>
           <Route index element={<Home language={language} toggleLanguage={toggleLanguage} isMobile={isMobile}/>} />
           <Route path="/" element={<Layout />} />
-          <Route path="/react-site-one" element={<Home language={language} toggleLanguage={toggleLanguage} isMobile={isMobile}/>} />
           <Route path="/contact" element={<Contact language={language} toggleLanguage={toggleLanguage} />} />
           <Route path="/products" element={<Products language={language} toggleLanguage={toggleLanguage} />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Home />} />
         </Routes>
 
           <Footer isMobile={isMobile} language={language} />
