@@ -1,0 +1,66 @@
+.paddin {
+    padding-left: 40px;
+}
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    padding: 15px;
+    margin: 0 auto;
+    width: 80%;
+}
+.my-div1 {
+    display: flex;
+    flex: 1;
+    margin: 5px; /* Adjust margin as needed */
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center; /* Apply padding directly to .my-div */
+    /* Additional styling for individual divs */
+}
+.my-div2 {
+    display: flex;
+    flex: 1;
+    margin: 5px; /* Adjust margin as needed */
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center; /* Apply padding directly to .my-div */
+    /* Additional styling for individual divs */
+}
+.upit {
+    font-size: x-large;
+    color: #43438c;
+    padding: 50px;
+    border: 4.5px solid #ada6f3;
+    border-radius: 60px;
+} 
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(155, 155, 243); /* Thicker blue border */
+    border-radius: 20px; /* Rounded corners */
+    outline: none;
+    margin-bottom: 10px;
+}
+.button {
+    background-color: #72a0db;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 14px;
+    margin: 4px 2px;
+    margin-top: 12px;
+    border-radius: 25px; /* Adjust the value as needed */
+}
+.shrinkTxt{
+font-size: 20px;
+
+}
