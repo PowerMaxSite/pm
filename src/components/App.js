@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route,useLocation } from 'react-router-dom';
 import Home from './Home';
 import Layout from './Layout';
 import NotFound from './NotFound';
@@ -17,6 +17,7 @@ import Header from './Header';
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [language, setLanguage] = useState('en');
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,6 +34,10 @@ const App = () => {
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'srb' : 'en');
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
 
   return (
     <>

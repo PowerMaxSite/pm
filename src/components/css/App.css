@@ -4,6 +4,9 @@
     flex-direction: column;
     width:100%;
   }
+  html {
+    scroll-behavior: smooth;
+}
   .headDiv{
     display: flex;
     flex-wrap: wrap;

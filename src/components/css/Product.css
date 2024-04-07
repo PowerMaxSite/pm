@@ -5,13 +5,15 @@
     width: 85%;
     display: flex;
     flex-wrap: nowrap;
+    padding-top: 120px;
+    margin-bottom: 50px;
 }
 .okvir .box {
   background-color: none;
   width: 50%;
   margin: 10px;
-  text-align: center;
-  line-height: 50px;
+  text-align: left;
+  line-height: 30px;
   font-size: 25px;
 }
 .text{
@@ -133,12 +135,13 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 30px;
       background: white;
       border-radius: 5px;
       margin: 0 20px;
-      width: 100px;
+      width: 150px;
       transition: ease-in 0.2s;
+      cursor: pointer;
     }
     
     .topnav button:hover {
@@ -149,8 +152,11 @@
       box-shadow: 0 0 2px 1px #9496a7;
     }
     
-    /* .topnav button.active {
-      background-color: none;
-      border: none;
-      color: rgb(197, 32, 32);
-    } */
+    ul {
+      list-style-type:disc;
+
+  }
+
+  li {
+      margin-bottom: 10px; 
+  }
