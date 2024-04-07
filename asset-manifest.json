@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/react-site-one/static/css/main.c91af61b.css",
-    "main.js": "/react-site-one/static/js/main.c4d95f29.js",
+    "main.css": "/react-site-one/static/css/main.10c30087.css",
+    "main.js": "/react-site-one/static/js/main.1d29c391.js",
     "static/media/peelS.png": "/react-site-one/static/media/peelS.ec1eac2d31c63eb639a6.png",
     "static/media/smolLog.png": "/react-site-one/static/media/smolLog.7b1c5776ef70d8ee68f0.png",
+    "static/media/bwSheets.png": "/react-site-one/static/media/bwSheets.955d62133c9130251282.png",
     "static/media/flagSrb.png": "/react-site-one/static/media/flagSrb.fd21a466d21fd9e377ce.png",
+    "static/media/rSheets.png": "/react-site-one/static/media/rSheets.e80dd6e8558d4097bc2f.png",
     "static/media/TransferPaper.png": "/react-site-one/static/media/TransferPaper.8de1d40e3676c55913f7.png",
+    "static/media/grSheets.png": "/react-site-one/static/media/grSheets.4dda3daa3ebcba22d617.png",
     "static/media/divHome.png": "/react-site-one/static/media/divHome.c5104bc38637beac8df6.png",
     "static/media/flagEng.png": "/react-site-one/static/media/flagEng.d629e0e05d763ab2b698.png",
     "index.html": "/react-site-one/index.html",
-    "main.c91af61b.css.map": "/react-site-one/static/css/main.c91af61b.css.map",
-    "main.c4d95f29.js.map": "/react-site-one/static/js/main.c4d95f29.js.map"
+    "main.10c30087.css.map": "/react-site-one/static/css/main.10c30087.css.map",
+    "main.1d29c391.js.map": "/react-site-one/static/js/main.1d29c391.js.map"
   },
   "entrypoints": [
-    "static/css/main.c91af61b.css",
-    "static/js/main.c4d95f29.js"
+    "static/css/main.10c30087.css",
+    "static/js/main.1d29c391.js"
   ]
 }
