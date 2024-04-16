@@ -1,0 +1,21 @@
+/* Header.css */
+
+.my-header {
+  background-color: none;
+  color: #0800ff;
+  /* padding: 20px 0; */
+  transition: background-color 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    
+  }
+  .underline-on-hover:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+  color: blue;
+  transition:  0.5s;
+
+    /* text-underline-position: under; */
+  }
+  

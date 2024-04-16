@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import smol from './pics/smolLog.png';
+import './css/Footer.css';
+import logo from './pics/TransferPaper.png';
 
 function Footer({isMobile,language}) {
   const footerStyle = {
@@ -20,28 +21,39 @@ function Footer({isMobile,language}) {
   return (
     <>
     <div className='dno'>
-    {!isMobile && (
-      <span className='dnoSpan'>
-        <img src={smol} alt='small_logo' className='smallLogo'></img>
-      </span>
-    )}
                 <span className='dnoSpan'>
-      <h3> <Link to="/contact" className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h3>
-      <p style={{ textAlign: 'center', fontSize: isMobile ? '14px' : '20px' }}>
-        gile.borocki@gmail.com<br /><br />
-        <i style={{ opacity: '0.5' }}>Tel: </i> 060 12 123 123
+      {isMobile ? (<h3>PowerMax&nbsp;D.O.O</h3>):(<h1>PowerMax&nbsp;D.O.O</h1>)}
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '10px' : '1vw' }}>
+        Vuka&nbsp;Karadžića&nbsp;14<br />
+        21400&nbsp;Backa&nbsp;Palanka<br />
+        Serbia<br />
       </p>
     </span>
     <span className='dnoSpan'>
-      <h3><Link to='/contact' className='customLink'>{language === 'en' ? 'Adress' : 'Adresa'}</Link></h3>
-      <p style={{ textAlign: 'center', fontSize: isMobile ? '14px' : '20px' }}>Vuka Karadžića 14 21400 Backa Palanka Srbija</p><br /><br />
+      {isMobile ? (<h3><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h3>):(
+        <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
+      )}
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '10px' : '1vw' }}>
+        gileborocki@gmail.com<br />
+        powermaxbp@gmail.com<br /><br />
+
+      <i style={{ opacity: '0.5' }}>Tel: </i> 060 12 123 123</p>
     </span>
+    {!isMobile ?(
+    <span className='dnoSpan' style={{display: 'flex', alignItems: 'center'}}>
+      <div>
+        <img src={logo} alt='pm' style={{maxWidth: '20vw'}} ></img>
+        </div>
+        </span>
+    ):(<></>)
+}
   </div>
     <footer className='footer' style={footerStyle}>
       <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 PowerMax Doo All rights reserved</span>
     </footer>
+
     </>
-  );
+  )
 }
 
 export default Footer;

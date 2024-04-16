@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Header.css';
+import './css/NavBar.css';
 import { Link } from 'react-router-dom';
 
 import SideNav from "./SideNav"
@@ -7,7 +7,7 @@ import srb from './pics/flagSrb.png';
 import en from './pics/flagEng.png';
 import logo from './pics/TransferPaper.png';
 
-const Header = ({language, isMobile, setLanguage, toggleLanguage}) => {
+const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
 
   return (
 
@@ -28,17 +28,17 @@ const Header = ({language, isMobile, setLanguage, toggleLanguage}) => {
                 
             </div>
             <div className='menuDiv'>
-{/*Side Meni*/}              
+{/*Meni*/}              
               {isMobile ? (                
                   <SideNav language={language} setLanguage={setLanguage} />
               ) : (
                 <>
                     <>
-                      <span className='paddin underline-on-hover' style={{ fontSize: '31px' }}>
+                      <span className='paddin underline-on-hover ' style={{ fontSize: '25px' }}>
                         <Link to="/" className='custom-link'>{language === 'en' ? <>About&nbsp;us</> : <>O&nbsp;nama</>}</Link></span>
-                      <span className='paddin underline-on-hover' style={{ fontSize: '31px' }}>
+                      <span className='paddin underline-on-hover' style={{ fontSize: '25px' }}>
                         <Link to="/products" className='custom-link'>{language === 'en' ? 'Products' : 'Proizvodi'}</Link></span>
-                      <span className='paddin underline-on-hover' style={{ fontSize: '31px', paddingRight: '40px' }}>
+                      <span className='paddin underline-on-hover' style={{ fontSize: '25px', paddingRight: '40px' }}>
                         <Link to="/contact" className='custom-link'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></span>
                     </>
                   <span className='spanLang'>
@@ -62,4 +62,4 @@ const Header = ({language, isMobile, setLanguage, toggleLanguage}) => {
   );
 };
 
-export default Header;
+export default NavBar;

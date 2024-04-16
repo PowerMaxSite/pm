@@ -3,6 +3,7 @@
     display:flex ;
     flex-direction: column;
     width:100%;
+    background-color: #f7f7f7;
   }
   html {
     scroll-behavior: smooth;
@@ -10,6 +11,9 @@
   .headDiv{
     display: flex;
     flex-wrap: wrap;
+    border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 6px 16px 0 rgba(25,25,25,.06);
+  background: #ffffff;
   }
   .logoDiv {
     display: flex;
@@ -57,11 +61,6 @@
   text-decoration: none; 
   transition: text-decoration 0.3s; 
 }
-
-/* Style for the link on hover */
-.underline-on-hover:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
 .languageButton {
   border: none;
   background: none !important; /* Remove button background */
@@ -91,11 +90,11 @@
 .dividerLang {
   width: 2px;
   height: 51px;
-  background-color: #b3d7d2;
+  background-color: #240fb5;
   margin: 0 10px;
 }
 .spanLang{
-  border: 3px solid #b3d7d2;
+  border: 3px solid #240fb5;
   border-radius: 15px;
   display: flex;
   margin-left: 1px;
@@ -107,7 +106,7 @@
 }
 .spanLangM{
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 32px;
   padding-left: 12px;
   padding-top: px;
@@ -125,22 +124,6 @@
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 12px;
-}
-.dno{
-  background-color: #212830;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  margin-top: 100px;
-
-  
-}
-.dnoSpan{
-  color: white;
-display: grid;
-justify-items: center;
-width: 100vh;
 }
 .vodoravna{
 display: flex;
@@ -163,15 +146,15 @@ margin-bottom: 10px;
   padding-left:10px;
   padding-right: 5px;
 }
-.overlay{
+ .overlay{
   position: absolute;
   top: 25%;
   left: 25%;
   transform: translate(-50%, -50%);
   color: white;
-  background: none; /* Semi-transparent black background */
+  background: none; 
   padding: 10px;
-}
+} 
 .glowImg{
   display: inline-block;
   width: 47%;

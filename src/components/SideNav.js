@@ -31,9 +31,14 @@ function SideNav({language,setLanguage}) {
                         </button>
                         </div>
                   </span>
-        <Link to='/' className='custom-link' onClick={closeNav}>{language === 'en' ? 'About us' : <>O&nbsp;nama</>}</Link>
-        <Link to='/products' className='custom-link' onClick={closeNav}>{language === 'en' ? 'Products' : 'Proizvodi'}</Link>
-        <Link to='/contact' className='custom-link' onClick={closeNav}>{language === 'en' ? 'Contact' : 'Kontakt'}</Link>
+                  <div style={{paddingTop: '10px'}}>
+        <Link to='/' className='custom-link' onClick={closeNav}>
+          {language === 'en' ? <>About&nbsp;us</> : <>O&nbsp;nama</>}</Link>
+        <Link to='/products' className='custom-link' onClick={closeNav}>
+          {language === 'en' ? 'Products' : 'Proizvodi'}</Link>
+        <Link to='/contact' className='custom-link' onClick={closeNav}>
+          {language === 'en' ? 'Contact' : 'Kontakt'}</Link>
+          </div>
       </div>
       <span style={{ fontSize: '30px', cursor: 'pointer',color: '#5b83cd',paddingRight: '5px' }} onClick={openNav}>&#9776;</span>
     </div>

@@ -2,17 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route,useLocation } from 'react-router-dom';
 import Home from './Home';
 import Layout from './Layout';
-import NotFound from './NotFound';
 import Contact from './Contact';
 import Products from './Products';
 import Footer from "./Footer";
 import './css/index.css';
-import './css/Header.css';
+import './css/NavBar.css';
 import './css/Contact.css';
 import './css/Links.css';
 import './css/App.css';
 import './css/SideNav.css';
-import Header from './Header';
+import NavBar from './NavBar';
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +42,7 @@ const App = () => {
     <>
       <div className="App">
 
-        <Header language={language}  isMobile={isMobile} toggleLanguage={toggleLanguage} setLanguage={setLanguage} />
+        <NavBar language={language}  isMobile={isMobile} toggleLanguage={toggleLanguage} setLanguage={setLanguage} />
 
         <Routes>
           <Route index element={<Home language={language} toggleLanguage={toggleLanguage} isMobile={isMobile}/>} />
