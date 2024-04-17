@@ -33,20 +33,12 @@ function Footer({isMobile,language}) {
       {isMobile ? (<h3><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h3>):(
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
       )}
-      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw',width:'fit-content' }}>
         gileborocki@gmail.com<br />
         powermaxbp@gmail.com<br /><br />
 
-      <i style={{ opacity: '0.5' }}>Tel:&nbsp;</i>060-&nbsp;12-&nbsp;123-&nbsp;123 </p>
+        <div><i style={{ opacity: '0.5' }}>Tel:</i>060-12-123-123 </div></p>
     </span>
-    {!isMobile ?(
-    <span className='dnoSpan' style={{display: 'flex', alignItems: 'center'}}>
-      <div>
-        <img src={logo} alt='pm' style={{maxWidth: '20vw'}} ></img>
-        </div>
-        </span>
-    ):(<></>)
-}
   </div>
     <footer className='footer' style={footerStyle}>
       <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 PowerMax Doo All rights reserved</span>
