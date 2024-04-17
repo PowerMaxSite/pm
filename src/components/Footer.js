@@ -23,7 +23,7 @@ function Footer({isMobile,language}) {
     <div className='dno'>
                 <span className='dnoSpan'>
       {isMobile ? (<h3>PowerMax&nbsp;D.O.O</h3>):(<h1>PowerMax&nbsp;D.O.O</h1>)}
-      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '10px' : '1vw' }}>
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
         Vuka&nbsp;Karadžića&nbsp;14<br />
         21400&nbsp;Backa&nbsp;Palanka<br />
         Serbia<br />
@@ -33,11 +33,11 @@ function Footer({isMobile,language}) {
       {isMobile ? (<h3><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h3>):(
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
       )}
-      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '10px' : '1vw' }}>
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
         gileborocki@gmail.com<br />
         powermaxbp@gmail.com<br /><br />
 
-      <i style={{ opacity: '0.5' }}>Tel: </i> 060 12 123 123</p>
+      <i style={{ opacity: '0.5' }}>Tel:&nbsp;</i>060-&nbsp;12-&nbsp;123-&nbsp;123 </p>
     </span>
     {!isMobile ?(
     <span className='dnoSpan' style={{display: 'flex', alignItems: 'center'}}>

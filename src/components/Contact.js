@@ -8,35 +8,36 @@ import './css/Contact.css';
 const Contact = ({ language, toggleLanguage}) => {
 return (
   <>
-  <h1 style={{color: '#43438c',paddingLeft: '30px'}}>{language === 'en' ? 'Contact Us' : 'Kontaktirajte Nas'}</h1>
+  <h1 style={{paddingLeft: '30px',color: '#24569b'}}>{language === 'en' ? 'Contact Us' : 'Kontaktirajte Nas'}</h1>
 <div className="container" style={{padding: '40px',borderRadius: '15px',marginTop: '30px'}}>
 
   {/*Kontak informacije*/}
 
-    <div className='my-div1'>
+    <div className='my-div'>
 
-<h2><b style={{color: '#43438c',fontSize: '30px'}}>Gligorije Borocki <i style={{fontSize: '22px'}}>{language === 'en' ? '(Director and Owner)' : '(Direktor i Vlasnik)'}</i></b><br />
+<h2><b style={{fontSize: '30px'}}>Gligorije Borocki <i style={{fontSize: '22px'}}>{language === 'en' ? '(Director and Owner)' : '(Direktor i Vlasnik)'}</i></b><br />
 <br /><br/>
 <p>
                 <i><img title='mail' src={mail} alt='mail' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin shrinkTxt" style={{color: '#43438c',fontSize: '19px'}}>gileborocki@gmail.com</span>
+                <span className="paddin shrinkTxt" style={{fontSize: '19px'}}>gileborocki@gmail.com</span>
                 </p>
                 <br /> 
 
                 <p>
                 <i><img title='fon' src={phone} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin" style={{color: '#43438c'}}>+381 60 12-12-123</span>
+                <span className="paddin">+381 60 12-12-123</span>
                 </p>
                 <br/>
 
                 <p>
                 <i><img title='linkedin' src={linkedin} alt='linkedin' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin" style={{color: '#43438c'}}>Gligorije Borocki</span>
+                <span className="paddin">Gligorije Borocki</span>
                 </p><br/>
 
-                <p>
+                <p><div style={{display: 'flex'}}>
                 <i><img title='addres' src={addres} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin" style={{color: '#43438c'}}>Vuka Karadžića 14, 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
+                <span className="paddin">Vuka Karadžića 14 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
+                </div>
                 </p>
 
                 <br /><br/>
@@ -44,9 +45,9 @@ return (
 </h2>
 </div>
   {/*Upit Forma*/}
-  <div className='my-div2'>
+  <div className='my-div'>
     <div className='upit'>
-      <h2 style={{color: '#43438c', display: 'flex', justifyContent: 'center'}}>{language === 'en' ? 'Direct Contact' : 'Direktan Kontakt'}</h2>
+      <h2 style={{display: 'flex', justifyContent: 'center'}}>{language === 'en' ? 'Direct Contact' : 'Direktan Kontakt'}</h2>
   <form>
     <label for="username">{language === 'en' ? 'Name' : 'Ime'}:</label><br/>
     <input type="text" id="username" name="username" placeholder={language === 'en' ? 'Name' : 'Ime'}></input><br/>

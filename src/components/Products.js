@@ -114,14 +114,15 @@ Final appearance after transfering on textil - MATTE.<br/><br/>
  </>
 ):(
   <>
+  {/*  mobile */}
 <div className="topnav" style={{width: '90%',marginBottom: '100px'}}>
 <a href="#plavi"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80BW</button></a>
 <a href="#zeleni"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80P</button></a>
 <a><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>110BW</button></a>
 <a href="#crveni"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>125S</button></a>
 </div>
-{/* plavi mobile */}
-<div id="plavi" style={{marginTop: '50px'}}>
+
+<div id="plavi" className="okvirM">
 <div><h3 style={{textAlign: 'center'}}>TEXIMAX CP-e 80BW</h3><p style={{paddingRight: '30px',paddingLeft: '30px'}}>
  The high quality transfer paper for Screen printing on textile with plastisol inks.<br/><br />
 <b>Properties:</b><br />
@@ -140,12 +141,32 @@ Final appearance after transfering on textil - MATTE.<br/><br/>
 <i>*other sizes are available on customer request</i></p>
 
 </div>
-<div style={{display: 'flex',justifyContent: 'center'}}><img src={bw80} alt="bw80" style={{width: '60%'}} ></img></div>
+<div className="okvirSlikeM"><img src={bw80} alt="bw80" style={{width: '60%'}} ></img></div>
+ </div>
+ <div id="zeleni" className="okvirM" >
+<div><h3 style={{textAlign: 'center'}}>TEXIMAX CP-e 80P</h3><p style={{paddingRight: '30px',paddingLeft: '30px'}}>
+ The high quality transfer paper for Screen printing on textile with plastisol inks.<br/><br />
+<b>Properties:</b><br />
+<ul>
+        <li>weight 80g./sm</li>
+        <li>designed for cold peel transfers</li>
+        <li>colored sides-Light blue / White</li>
+</ul>
+<b>Screen printing:</b><br/><br/>
+Ink types: Wide range of plastisol inks can be used with or without powdered adhesives (polyester, poly
+amide, polyurethane).<br/>
+Final appearance after transfering on textil - MATTE.<br/><br/>
+<b>Default Packaging:</b><br /><br />
+&nbsp;&nbsp;&nbsp;250 Sheets 100 x 70 cm<br/>
+&nbsp;&nbsp;&nbsp;500 Sheets 50 x 70 cm<br /><br />
+<i>*other sizes are available on customer request</i></p>
+
+</div>
+<div className="okvirSlikeM"><img src={p80} alt="p80" style={{width: '60%'}} ></img></div>
  </div>
 
-
- <div id="zeleni" style={{marginTop: '100px'}} >
-<div><h3 style={{textAlign: 'center'}}>TEXIMAX CP-e 80BW</h3><p style={{paddingRight: '30px',paddingLeft: '30px'}}>
+ <div id="crveni" className="okvirM">
+<div><h3 style={{textAlign: 'center'}}>TEXIMAX CP-e 125S</h3><p style={{paddingRight: '30px',paddingLeft: '30px'}}>
  The high quality transfer paper for Screen printing on textile with plastisol inks.<br/><br />
 <b>Properties:</b><br />
 <ul>
@@ -163,29 +184,7 @@ Final appearance after transfering on textil - MATTE.<br/><br/>
 <i>*other sizes are available on customer request</i></p>
 
 </div>
-<div style={{display: 'flex',justifyContent: 'center'}}><img src={p80} alt="p80" style={{width: '60%'}} ></img></div>
- </div>
-
- <div id="crveni" style={{marginTop: '100px'}}>
-<div><h3 style={{textAlign: 'center'}}>TEXIMAX CP-e 80BW</h3><p style={{paddingRight: '30px',paddingLeft: '30px'}}>
- The high quality transfer paper for Screen printing on textile with plastisol inks.<br/><br />
-<b>Properties:</b><br />
-<ul>
-        <li>weight 80g./sm</li>
-        <li>designed for cold peel transfers</li>
-        <li>colored sides-Light blue / White</li>
-</ul>
-<b>Screen printing:</b><br/><br/>
-Ink types: Wide range of plastisol inks can be used with or without powdered adhesives (polyester, poly
-amide, polyurethane).<br/>
-Final appearance after transfering on textil - MATTE.<br/><br/>
-<b>Default Packaging:</b><br /><br />
-&nbsp;&nbsp;&nbsp;250 Sheets 100 x 70 cm<br/>
-&nbsp;&nbsp;&nbsp;500 Sheets 50 x 70 cm<br /><br />
-<i>*other sizes are available on customer request</i></p>
-
-</div>
-<div style={{display: 'flex',justifyContent: 'center'}}><img src={r80} alt="r80" style={{width: '60%'}} ></img></div>
+<div className="okvirSlikeM"><img src={r80} alt="r80" style={{width: '60%'}} ></img></div>
  </div>
  </>
 )}

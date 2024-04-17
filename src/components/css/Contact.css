@@ -11,29 +11,21 @@
     margin: 0 auto;
     width: 80%;
 }
-.my-div1 {
+.my-div {
     display: flex;
     flex: 1;
-    margin: 5px; /* Adjust margin as needed */
+    margin: 5px;
     padding-left: 20px;
     align-items: center;
-    justify-content: center; /* Apply padding directly to .my-div */
-    /* Additional styling for individual divs */
-}
-.my-div2 {
-    display: flex;
-    flex: 1;
-    margin: 5px; /* Adjust margin as needed */
-    padding-left: 20px;
-    align-items: center;
-    justify-content: center; /* Apply padding directly to .my-div */
-    /* Additional styling for individual divs */
+    justify-content: center; 
+    color: #24569b;
+
 }
 .upit {
     font-size: x-large;
-    color: #43438c;
+    color: #24569b;
     padding: 50px;
-    border: 4.5px solid #ada6f3;
+    border: 4.5px solid #24569b;
     border-radius: 60px;
 } 
 input[type="text"],
@@ -42,7 +34,7 @@ textarea {
     width: 100%;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid rgb(155, 155, 243); /* Thicker blue border */
+    border: 2px solid #24569b;
     border-radius: 20px; /* Rounded corners */
     outline: none;
     margin-bottom: 10px;
