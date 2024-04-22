@@ -23,7 +23,7 @@ return(
   <h1 style={{textAlign: 'center'}}>{language === 'en' ? 'About us' : 'O Nama'}</h1>
 
       <div className='container' style={{marginTop: '10px'}}>
-        <p style={{fontFamily: 'sans-serif',fontSize: '25px'}}>{language === 'en' ? 'Firm' : 'Firma'} <b>Power Max DOO</b> {language === 'en' ? 'Backa Palanka is established 2006.year.' : 'Backa Palanka je osnovana 2006. godine.'}.<br/><br/>
+        <p style={{fontFamily: 'sans-serif',fontSize: '25px'}}>{language === 'en' ? 'Firm' : 'Firma'} <b>Powermax DOO</b> {language === 'en' ? 'Backa Palanka is established 2007.year' : 'Backa Palanka je osnovana 2007. godine'}.<br/><br/>
 
         {language === 'en' ? 'Gained quality constantly gets upgraded following modern trends and listening to requests of our customers.' : 'Stečeni kvalitet konstantno usavršavamo prateći savremene trendove i slušajući zahteve nasih korisnika.'}<br/><br/>
 

@@ -12,6 +12,8 @@ import './css/Links.css';
 import './css/App.css';
 import './css/SideNav.css';
 import NavBar from './NavBar';
+import skrol from './pics/scrll.png'
+import r80 from './pics/rSheets.png'
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -38,6 +40,26 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
 
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 500) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  };
+
   return (
     <>
       <div className="App">
@@ -52,7 +74,18 @@ const App = () => {
           <Route path="*" element={<Home />} />
         </Routes>
 
+        {showButton && (
+          
+        <button onClick={scrollToTop} className="back-to-top">
+          {isMobile ? (<img src={skrol} alt='skrol' style={{width: "40px"}}></img> ):(
+            <img src={skrol} alt='skrol' style={{width: "100px"}}></img>
+          )}
+        </button>
+      )}
+
+
           <Footer isMobile={isMobile} language={language} />
+
 
       </div>
     </>

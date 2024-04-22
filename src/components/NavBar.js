@@ -24,7 +24,7 @@ const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
                   </Link></span> 
                   )}  
 {/*Backa Palanka*/}                  
-                  {!isMobile && <span style={{ fontSize: '20px', paddingLeft: '10px', opacity: '0.3' }}>Backa Palanka</span>}
+                  {!isMobile && <span style={{ fontSize: '20px', paddingLeft: '10px', opacity: '0.7',color: '#b5afaf' }}>Backa Palanka</span>}
                 
             </div>
             <div className='menuDiv'>

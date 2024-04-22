@@ -13,6 +13,7 @@
   .underline-on-hover:hover {
     text-decoration: underline;
     text-underline-offset: 20px;
+    text-decoration-thickness: 4px;
   color: blue;
   transition:  0.5s;
 

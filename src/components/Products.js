@@ -38,7 +38,7 @@ const Products = ({ language, toggleLanguage}) => {
 {/* Papir meni skrol */}
 {!isMobile ? (
   <>
-<div className="topnav">
+<div className="topnav stickyElement">
 <a href="#plavi"><button>80BW</button></a>
 <a href="#zeleni"><button>80P</button></a>
 <a><button>110BW</button></a>
@@ -115,7 +115,7 @@ Final appearance after transfering on textil - MATTE.<br/><br/>
 ):(
   <>
   {/*  mobile */}
-<div className="topnav" style={{width: '90%',marginBottom: '100px'}}>
+<div className="topnav stickyElementM" style={{width: '90%',marginBottom: '100px'}}>
 <a href="#plavi"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80BW</button></a>
 <a href="#zeleni"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80P</button></a>
 <a><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>110BW</button></a>

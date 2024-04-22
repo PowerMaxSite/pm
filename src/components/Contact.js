@@ -21,7 +21,7 @@ return (
                 <i><img title='mail' src={mail} alt='mail' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
                 <span className="paddin shrinkTxt" style={{fontSize: '19px'}}>gileborocki@gmail.com</span>
                 </p>
-                <br /> 
+                <br/> 
 
                 <p>
                 <i><img title='fon' src={phone} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>

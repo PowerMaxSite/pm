@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/Footer.css';
-import logo from './pics/TransferPaper.png';
+
 
 function Footer({isMobile,language}) {
   const footerStyle = {
@@ -22,11 +22,11 @@ function Footer({isMobile,language}) {
     <>
     <div className='dno'>
                 <span className='dnoSpan'>
-      {isMobile ? (<h3>PowerMax&nbsp;D.O.O</h3>):(<h1>PowerMax&nbsp;D.O.O</h1>)}
+      {isMobile ? (<h3>Powermax&nbsp;D.O.O</h3>):(<h1>Powermax&nbsp;D.O.O</h1>)}
       <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
-        Vuka&nbsp;Karadžića&nbsp;14<br />
-        21400&nbsp;Backa&nbsp;Palanka<br />
-        Serbia<br />
+        <p>Vuka&nbsp;Karadžića&nbsp;14</p>
+        <p> 21400&nbsp;Backa&nbsp;Palanka</p>
+        <p> Serbia</p>
       </p>
     </span>
     <span className='dnoSpan'>
@@ -34,8 +34,8 @@ function Footer({isMobile,language}) {
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
       )}
       <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw',width:'fit-content' }}>
-        gileborocki@gmail.com<br />
-        powermaxbp@gmail.com<br /><br />
+        <p>gileborocki@gmail.com</p>
+        <p>powermaxbp@gmail.com</p><br />
 
         <div><i style={{ opacity: '0.5' }}>Tel:</i>060-12-123-123 </div></p>
     </span>
