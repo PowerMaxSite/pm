@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route,useLocation } from 'react-router-dom';
 import Home from './Home';
-import Layout from './Layout';
 import Contact from './Contact';
 import Products from './Products';
 import Footer from "./Footer";
@@ -13,7 +12,7 @@ import './css/App.css';
 import './css/SideNav.css';
 import NavBar from './NavBar';
 import skrol from './pics/scrll.png'
-import r80 from './pics/rSheets.png'
+
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,7 +67,7 @@ const App = () => {
 
         <Routes>
           <Route index element={<Home language={language} toggleLanguage={toggleLanguage} isMobile={isMobile}/>} />
-          <Route path="/" element={<Layout />} />
+          <Route path="/react-site-one" element={<Home language={language} toggleLanguage={toggleLanguage} />} />
           <Route path="/contact" element={<Contact language={language} toggleLanguage={toggleLanguage} />} />
           <Route path="/products" element={<Products language={language} toggleLanguage={toggleLanguage} />} />
           <Route path="*" element={<Home />} />

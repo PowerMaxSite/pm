@@ -41,7 +41,7 @@ function Footer({isMobile,language}) {
     </span>
   </div>
     <footer className='footer' style={footerStyle}>
-      <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 PowerMax Doo All rights reserved</span>
+      <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 PowerMax Doo {language === 'en' ?"All rights reserved" : "Sva prava zadrzana"}</span>
     </footer>
 
     </>
