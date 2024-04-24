@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/react-site-one/static/css/main.23798a2e.css",
-    "main.js": "/react-site-one/static/js/main.255a8ba6.js",
+    "main.css": "/react-site-one/static/css/main.8e871237.css",
+    "main.js": "/react-site-one/static/js/main.b589a917.js",
     "static/media/peelS.png": "/react-site-one/static/media/peelS.ec1eac2d31c63eb639a6.png",
-    "static/media/debeliPapir.png": "/react-site-one/static/media/debeliPapir.2bbf317e5d3022ca817e.png",
-    "static/media/bwSheets.png": "/react-site-one/static/media/bwSheets.955d62133c9130251282.png",
+    "static/media/saturatedPaper.png": "/react-site-one/static/media/saturatedPaper.e4cb0fe2b022c554555b.png",
     "static/media/flagSrb.png": "/react-site-one/static/media/flagSrb.fd21a466d21fd9e377ce.png",
     "static/media/krem.png": "/react-site-one/static/media/krem.6b9fb6f6beb9bd0c2d5d.png",
-    "static/media/TransferPaper.png": "/react-site-one/static/media/TransferPaper.8de1d40e3676c55913f7.png",
+    "static/media/TransferPaper2.png": "/react-site-one/static/media/TransferPaper2.4496d3f1a43dd2eb8ef2.png",
     "static/media/grSheets.png": "/react-site-one/static/media/grSheets.4dda3daa3ebcba22d617.png",
     "static/media/divHome.png": "/react-site-one/static/media/divHome.c5104bc38637beac8df6.png",
     "static/media/scrll.png": "/react-site-one/static/media/scrll.5ffb5406e904ee35e696.png",
     "static/media/flagEng.png": "/react-site-one/static/media/flagEng.d629e0e05d763ab2b698.png",
     "index.html": "/react-site-one/index.html",
-    "main.23798a2e.css.map": "/react-site-one/static/css/main.23798a2e.css.map",
-    "main.255a8ba6.js.map": "/react-site-one/static/js/main.255a8ba6.js.map"
+    "main.8e871237.css.map": "/react-site-one/static/css/main.8e871237.css.map",
+    "main.b589a917.js.map": "/react-site-one/static/js/main.b589a917.js.map"
   },
   "entrypoints": [
-    "static/css/main.23798a2e.css",
-    "static/js/main.255a8ba6.js"
+    "static/css/main.8e871237.css",
+    "static/js/main.b589a917.js"
   ]
 }
