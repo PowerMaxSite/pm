@@ -15,32 +15,34 @@ return (
 
     <div className='my-div'>
 
-<h2><b style={{fontSize: '30px'}}>Gligorije Borocki <i style={{fontSize: '22px'}}>{language === 'en' ? '(Director and Owner)' : '(Direktor i Vlasnik)'}</i></b><br />
+<h2><b style={{fontSize: '30px'}}>Gligorije Borocki <i style={{fontSize: '22px'}}>{language === 'en' ? '(General Director)' : '(Generalni Direktor)'}</i></b><br />
 <br /><br/>
-<p>
+{/* Tehnicki direktor */}
+                <p style={{paddingBottom: '10px'}}> 
                 <i><img title='mail' src={mail} alt='mail' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin shrinkTxt" style={{fontSize: '19px'}}>gileborocki@gmail.com</span>
+                <span className="paddin shrinkTxt" style={{fontSize: '19px'}}>gile.borocki@gmail.com</span>
                 </p>
-                <br/> 
+                 {/* bobanradonic@gmail.com */}
 
-                <p>
+                <p style={{paddingBottom: '10px'}}> 
                 <i><img title='fon' src={phone} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin">+381 60 12-12-123</span>
+                <span className="paddin">+381 60 33-77-946</span>
                 </p>
-                <br/>
+                {/* +381 60 02-02-02-8 */}
 
-                <p>
+                <p style={{paddingBottom: '20px'}}> 
                 <i><img title='linkedin' src={linkedin} alt='linkedin' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
                 <span className="paddin">Gligorije Borocki</span>
-                </p><br/>
+                </p>
+                {/* linkedin linkove ubaciti  */}
 
                 <p><div style={{display: 'flex'}}>
                 <i><img title='addres' src={addres} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin">Vuka Karadžića 14 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
+                <span className="paddin">Vuka Karadžića 15 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
                 </div>
                 </p>
 
-                <br /><br/>
+                <br />
 
 </h2>
 </div>

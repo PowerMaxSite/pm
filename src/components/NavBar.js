@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SideNav from "./SideNav"
 import srb from './pics/flagSrb.png';
 import en from './pics/flagEng.png';
-import logo from './pics/TransferPaper.png';
+import logo from './pics/TransferPaper2.png';
 
 const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
 

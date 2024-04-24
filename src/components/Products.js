@@ -1,9 +1,8 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import peel from './pics/peelS.png'
-import bw80 from './pics/bwSheets.png'
+import bw80 from './pics/saturatedPaper.png'
 import p80 from './pics/grSheets.png'
-import bw110 from './pics/debeliPapir.png'
 import p125S from './pics/krem.png'
 import './css/Product.css'
 import './css/Modal.css'
@@ -25,7 +24,6 @@ const Products = ({ language, toggleLanguage}) => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
 
   return (
     <>
@@ -182,7 +180,7 @@ Final appearance after transfering on textil - MATTE.<br/><br/>
 &nbsp;&nbsp;&nbsp;250 Sheets 100 x 70 cm<br/>
 &nbsp;&nbsp;&nbsp;500 Sheets 50 x 70 cm<br /><br />
 <i>*other sizes are available on customer request</i></p></div>
-<div className="box" style={{display: 'flex', justifyContent: 'center'}}><img src={bw110} alt="bw80" ></img></div>
+<div className="box" style={{display: 'flex', justifyContent: 'center'}}><img src={bw80} alt="bw80" ></img></div>
  </div>
  
  <div className="okvir" id="krem">
@@ -234,8 +232,8 @@ final printing size one day earlier before printing in
 <div className="topnav stickyElementM" style={{width: '90%',marginBottom: '100px'}}>
 <a href="#plavi"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80BW</button></a>
 <a href="#zeleni"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>80P</button></a>
-<a><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>110BW</button></a>
-<a href="#crveni"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>125S</button></a>
+<a href="#debeli"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>110BW</button></a>
+<a href="#krem"><button style={{textAlign: 'center',fontSize: '13px', width: '20%',height: '60%',margin: '0 5px'}}>125S</button></a>
 </div>
 
 <div id="plavi" className="okvirM">
@@ -303,7 +301,7 @@ Final appearance after transfering on textil - <b>MATTE.</b><br/><br/>
 <i>*other sizes are available on customer request</i></p>
 
 </div>
-<div className="okvirSlikeM"><img src={bw110} alt="bw110" style={{width: '60%'}} ></img></div>
+<div className="okvirSlikeM"><img src={bw80} alt="bw110" style={{width: '60%'}} ></img></div>
  </div>
 
  <div id="krem" className="okvirM">
@@ -331,13 +329,6 @@ Final appearance after transfering on textil - <b>MATTE.</b><br/><br/>
  
  </>
 )}
-<div style={{display:"flex",justifyContent: 'center'}}>
-<div className= {isMobile ? "attentionM" : "attention"}>
-<p><b><h3>Important&nbsp;notice&nbsp;&#33;</h3></b></p><br/>Powermax products must be tested by the user for compliance with the equipment and production treatment applied by the user.<br/><br/>
- Powermax is not liable for any injury, direct or consequential, arising from the use of, or inability to use Powermax products. <br/><br/>
- The maximum obligation of Powermax is to replace any product supplied by Powermax, which has been proven to be defective.<br/>
-</div>
-</div>
     </>
   );
 };

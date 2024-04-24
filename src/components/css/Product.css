@@ -189,24 +189,3 @@
     top:80px
   }
 }
-.attentionM{
-  border: solid red;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 200px 20px 20px 20px;
-  color: red;
-
-}
-.attention{
-  opacity: 0.6;
-  border: 5px solid red;
-  padding: 50px;
-  font-size: 30px;
-  border-radius: 10px;
-  margin: 200px 100px 100px 100px;
-  width: 60%;
-  color: red;
-}
-.attention:hover{
-  opacity: 1;
-}

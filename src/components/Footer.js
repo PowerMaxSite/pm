@@ -22,9 +22,9 @@ function Footer({isMobile,language}) {
     <>
     <div className='dno'>
                 <span className='dnoSpan'>
-      {isMobile ? (<h3>Powermax&nbsp;D.O.O</h3>):(<h1>Powermax&nbsp;D.O.O</h1>)}
+      {isMobile ? (<h3>Powermax&nbsp;d.o.o&nbsp;Backa&nbsp;Palanka</h3>):(<h1>Powermax&nbsp;d.o.o&nbsp;Backa&nbsp;Palanka</h1>)}
       <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
-        <p>Vuka&nbsp;Karadžića&nbsp;14</p>
+        <p>Vuka&nbsp;Karadžića&nbsp;15</p>
         <p> 21400&nbsp;Backa&nbsp;Palanka</p>
         <p> Serbia</p>
       </p>
@@ -34,14 +34,17 @@ function Footer({isMobile,language}) {
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
       )}
       <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw',width:'fit-content' }}>
-        <p>gileborocki@gmail.com</p>
-        <p>powermaxbp@gmail.com</p><br />
+      <p>powermaxbp@gmail.com</p>
+      <p>gile.borocki@gmail.com</p>
+      {/* bobanradonic@gmail.com */}
+        <br />
 
-        <div><i style={{ opacity: '0.5' }}>Tel:</i>060-12-123-123 </div></p>
+        <div><i style={{ opacity: '0.5' }}>Tel:</i>060-33-77-946 </div></p>
+        {/* bobanov br fona */}
     </span>
   </div>
     <footer className='footer' style={footerStyle}>
-      <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 PowerMax Doo {language === 'en' ?"All rights reserved" : "Sva prava zadrzana"}</span>
+      <span style={{ marginLeft: 'auto' ,marginRight: '40px'}}>&copy; 2024 Powermax d.o.o Backa Palanka {language === 'en' ?"All rights reserved" : "Sva prava zadrzana"}</span>
     </footer>
 
     </>
