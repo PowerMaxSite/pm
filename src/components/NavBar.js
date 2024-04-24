@@ -18,7 +18,8 @@ const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
                 {isMobile ? (
                   <span><Link to="/" className='customLink'>
                   <img src={logo} alt="pm_logo" style={{ objectFit: 'cover', width: '350px',maxWidth: '100%',minWidth: '250px',height: 'auto',}} />
-                  </Link></span> ):(
+                  </Link>
+                  </span> ):(
                   <span><Link to="/" className='customLink'>
                   <img src={logo} alt="pm_logo" style={{ objectFit: 'cover', width: '450px',maxWidth: '100%',minWidth: '250px',height: 'auto',paddingLeft: '40px'}} />
                   </Link></span> 

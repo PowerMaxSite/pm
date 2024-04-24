@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import srb from './pics/flagSrb.png';
@@ -10,14 +10,27 @@ function SideNav({language,setLanguage}) {
   const openNav = () => {
     setNavWidth(250);
   };
-
   const closeNav = () => {
     setNavWidth(0);
   };
 
+let menuRef= useRef();
+
+  useEffect(() =>{
+   let handler = (e)=>{
+    if(menuRef.current && !menuRef.current.contains(e.target)){
+      setNavWidth(0);
+    }
+
+   };
+
+document.addEventListener("mousedown", handler);
+
+  });
+
   return (
     <div>
-      <div className="sidenav" style={{ width: navWidth }}>
+      <div className="sidenav" style={{ width: navWidth }} ref={menuRef}>
         <button className="closebtn" onClick={closeNav}>&times;</button>
         <span className='spanLangM'>
                     <div style={{ paddingRight: '7px' }}>

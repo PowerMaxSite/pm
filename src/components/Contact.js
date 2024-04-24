@@ -5,7 +5,7 @@ import addres from './pics/location.png'
 import linkedin from './pics/linkedin.png'
 import './css/Contact.css';
 
-const Contact = ({ language, toggleLanguage}) => {
+const Contact = ({ language, toggleLanguage,isMobile}) => {
 return (
   <>
   <h1 style={{paddingLeft: '30px',color: '#24569b'}}>{language === 'en' ? 'Contact Us' : 'Kontaktirajte Nas'}</h1>
@@ -13,7 +13,7 @@ return (
 
   {/*Kontak informacije*/}
 
-    <div className='my-div'>
+    <div className='my-div' style={{'margin': isMobile ? '0px 5px' : '0px 50px'}}>
 
 <h2><b style={{fontSize: '30px'}}>Gligorije Borocki <i style={{fontSize: '22px'}}>{language === 'en' ? '(General Director)' : '(Generalni Direktor)'}</i></b><br />
 <br /><br/>
@@ -38,7 +38,7 @@ return (
 
                 <p><div style={{display: 'flex'}}>
                 <i><img title='addres' src={addres} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin">Vuka Karadžića 15 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
+                <span className="paddin">Vuka Karadžića 15<br/> 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
                 </div>
                 </p>
 
@@ -46,8 +46,43 @@ return (
 
 </h2>
 </div>
+
+<div className='my-div' style={{'margin': isMobile ? '0px 5px' : '0px 50px'}}>
+
+<h2><b style={{fontSize: '30px'}}>Slobodan Radonjic <i style={{fontSize: '22px'}}>{language === 'en' ? '(Technical Director)' : '(Tehnicki Direktor)'}</i></b><br />
+<br /><br/>
+{/* Tehnicki direktor */}
+                <p style={{paddingBottom: '10px'}}> 
+                <i><img title='mail' src={mail} alt='mail' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
+                <span className="paddin shrinkTxt" style={{'fontSize': isMobile ?  '18px' : '19px'}}>bobanradonic@gmail.com</span>
+                </p>
+                 
+
+                <p style={{paddingBottom: '10px'}}> 
+                <i><img title='fon' src={phone} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
+                <span className="paddin">+381 60 02-02-02-8</span>
+                </p>
+                
+
+                <p style={{paddingBottom: '20px'}}> 
+                <i><img title='linkedin' src={linkedin} alt='linkedin' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
+                <span className="paddin">Slobodan Radonjic</span>
+                </p>
+                {/* linkedin linkove ubaciti  */}
+
+                <p><div style={{display: 'flex'}}>
+                <i><img title='addres' src={addres} alt='phone' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
+                <span className="paddin">Vuka Karadžića 15<br/> 21400 Bačka Palanka, {language === 'en' ? 'Serbia' : 'Srbija'}</span>
+                </div>
+                </p>
+
+                <br />
+
+</h2>
+</div>
+
   {/*Upit Forma*/}
-  <div className='my-div'>
+  <div className='my-div' style={{'margin': isMobile ? '0px 5px' : '0px 50px'}}>
     <div className='upit'>
       <h2 style={{display: 'flex', justifyContent: 'center'}}>{language === 'en' ? 'Direct Contact' : 'Direktan Kontakt'}</h2>
   <form>

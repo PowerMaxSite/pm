@@ -13,8 +13,7 @@
 }
 .my-div {
     display: flex;
-    flex: 1;
-    margin: 2px;
+    margin: 0 0px;
     padding-left: 10px;
     align-items: center;
     justify-content: center; 

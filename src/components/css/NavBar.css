@@ -2,7 +2,7 @@
 
 .my-header {
   background-color: none;
-  color: #0800ff;
+  color: #24589f;
   /* padding: 20px 0; */
   transition: background-color 0.3s ease;
     position: sticky;
@@ -14,7 +14,7 @@
     text-decoration: underline;
     text-underline-offset: 20px;
     text-decoration-thickness: 4px;
-  color: blue;
+  color: #24589f;
   transition:  0.5s;
 
     /* text-underline-position: under; */

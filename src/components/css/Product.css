@@ -17,6 +17,11 @@
   line-height: 30px;
   font-size: 25px;
 }
+.okvir .box img{
+  max-width: 800px;
+  max-height: 800px;
+}
+
 .text{
     font-size: large;
     
