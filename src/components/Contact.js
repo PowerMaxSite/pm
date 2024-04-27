@@ -5,6 +5,7 @@ import addres from './pics/location.png'
 import linkedin from './pics/linkedin.png'
 import './css/Contact.css';
 
+
 const Contact = ({ language, toggleLanguage,isMobile}) => {
 return (
   <>
@@ -49,7 +50,7 @@ return (
 
 <div className='my-div' style={{'margin': isMobile ? '0px 5px' : '0px 50px'}}>
 
-<h2><b style={{fontSize: '30px'}}>Slobodan Radonjic <i style={{fontSize: '22px'}}>{language === 'en' ? '(Technical Director)' : '(Tehnicki Direktor)'}</i></b><br />
+<h2><b style={{fontSize: '30px'}}>Slobodan Radonic <i style={{fontSize: '22px'}}>{language === 'en' ? '(Technical Director)' : '(Tehnicki Direktor)'}</i></b><br />
 <br /><br/>
 {/* Tehnicki direktor */}
                 <p style={{paddingBottom: '10px'}}> 
@@ -66,7 +67,7 @@ return (
 
                 <p style={{paddingBottom: '20px'}}> 
                 <i><img title='linkedin' src={linkedin} alt='linkedin' style={{width: '30px', height: '30px', marginRight: '5px'}}/></i>
-                <span className="paddin">Slobodan Radonjic</span>
+                <span className="paddin">Slobodan Radonic</span>
                 </p>
                 {/* linkedin linkove ubaciti  */}
 

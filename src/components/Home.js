@@ -39,7 +39,7 @@ return(
 {language === 'en' ? 'For every product we give guarantee pereiod,which makes our customers care-free.' : 
 'Za sve proizvode dajemo garantni rok čime su naši korisnici osigurani.'}<br/><br/>
 
-{language === 'en' ? 'Customizable siliconization per your request' : 
+{language === 'en' ? 'Customizable siliconization per your request.' : 
 'Mogucnost silikonizacije po vasem zahtevu.'}<br/><br/>
  </p>
       </div><br/>

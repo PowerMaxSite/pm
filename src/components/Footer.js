@@ -37,9 +37,10 @@ function Footer({isMobile,language}) {
       {isMobile ? (<h3><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h3>):(
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
       )}
-      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw',width:'fit-content' }}>
+      <p style={{ textAlign: 'left',lineHeight: '20px', fontSize: '12px',width:'fit-content' }}>
       <p>gile.borocki@gmail.com</p>
       <p>bobanradonic@gmail.com</p>
+      <p>powermaxbp@gmail.com</p>
       {/* bobanradonic@gmail.com */}
 
         <div><i style={{ opacity: '0.5' }}>Tel:&nbsp;&nbsp;</i>+381 60-33-77-946<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+381 60 02-02-02-8 </div></p>
@@ -49,8 +50,9 @@ function Footer({isMobile,language}) {
     </>
       ):(
 <>
+
 <div className='dnoPC'>
-        <div className='dnoDiv' style={{width: '45%',paddingLeft: '100px'}}>
+        <div className='dnoDiv' style={{width: "fit-content"}}>
         <h1>Powermax&nbsp;d.o.o&nbsp;Backa&nbsp;Palanka</h1>
       <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
         <p>Vuka&nbsp;Karadžića&nbsp;15</p>
@@ -61,18 +63,29 @@ function Footer({isMobile,language}) {
 
         <div className='dnoDiv'>
         <h1><Link to='/contact' className='customLink'>{language === 'en' ? 'Contact' : 'Kontakt'}</Link></h1>
-      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw',width:'fit-content' }}>
+      <p style={{ textAlign: 'left',lineHeight: '28px', fontSize:'1vw',width:'fit-content' }}>
       <p>gile.borocki@gmail.com</p>
       <p>bobanradonic@gmail.com</p>
+      <p>powermaxbp@gmail.com</p>
+      </p>
       {/* bobanradonic@gmail.com */}
-
-        <div><i style={{ opacity: '0.5' }}>Tel:&nbsp;&nbsp;</i>+381 60-33-77-946<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+381 60 02-02-02-8 </div></p>
-        {/* bobanov br fona */}
         </div>
-        {/* <div style={{width: '35%',display: 'grid', justifyContent: "center", alignContent: 'center'}}>
-          <img src={pmlogo} alt='pmlogo' style={{maxWidth: '600px'}}></img>
-        </div> */}
-
+<div className='dnoDiv' style={{marginRight: '10px'}}>
+        <i><h1 style={{opacity: '0.7'}}>Tel:</h1></i>
+        <p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
+        <p>Gile: </p>
+        <p>Boban:  </p>
+        <p>fax: </p>
+</p>
+        </div>
+<div className='dnoDiv' style={{marginLeft: '15px'}}> 
+<p style={{ textAlign: 'left',lineHeight: '28px', fontSize: isMobile ? '12px' : '1vw' }}>
+<p>&nbsp;</p>
+<p>+381 60-33-77-946</p>
+<p>+381 60 02-02-02-8</p>
+<p>&nbsp;021-888-44</p>
+</p>
+</div>
         </div>
 </>
       )}

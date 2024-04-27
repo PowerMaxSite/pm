@@ -6,6 +6,7 @@ import SideNav from "./SideNav"
 import srb from './pics/flagSrb.png';
 import en from './pics/flagEng.png';
 import logo from './pics/TransferPaper2.png';
+import logoP from './pics/TransferPaper4.png'
 
 const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
 
@@ -17,7 +18,7 @@ const NavBar = ({language, isMobile, setLanguage, toggleLanguage}) => {
             <div className='logoDiv'>
                 {isMobile ? (
                   <span><Link to="/" className='customLink'>
-                  <img src={logo} alt="pm_logo" style={{ objectFit: 'cover', width: '350px',maxWidth: '100%',minWidth: '250px',height: 'auto',}} />
+                  <img src={logoP} alt="pm_logo" style={{ objectFit: 'cover', width: '350px',maxWidth: '100%',minWidth: '250px',height: 'auto',}} />
                   </Link>
                   </span> ):(
                   <span><Link to="/" className='customLink'>

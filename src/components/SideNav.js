@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 import srb from './pics/flagSrb.png';
 import en from './pics/flagEng.png';
@@ -53,7 +54,7 @@ document.addEventListener("mousedown", handler);
           {language === 'en' ? 'Contact' : 'Kontakt'}</Link>
           </div>
       </div>
-      <span style={{ fontSize: '30px', cursor: 'pointer',color: '#5b83cd',paddingRight: '5px' }} onClick={openNav}>&#9776;</span>
+      <span style={{ fontSize: '30px', cursor: 'pointer',color: '#5b83cd',paddingRight: '5px' }} onClick={openNav}><FaBars/></span>
     </div>
   );
 }

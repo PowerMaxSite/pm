@@ -3,6 +3,12 @@
     color: #240fb5;
     opacity: 1;
   }
+  .custom-link2 {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+    
+  }
   .custom-link:hover{
     opacity: 1;
     color: blue;

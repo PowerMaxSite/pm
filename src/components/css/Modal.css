@@ -1,58 +1,110 @@
-/* Modal (background) */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1001; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  padding-top: 10px;
 
-/* Modal Content */
+
+}
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdfSlika{
+  width: 50%;
+  height: auto;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.3s;
+  animation: animatezoom 0.3s
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
-/* Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+.details{
+  padding-top: 10px;
+  float: right;
+  color: #3a5cc2;
+  margin-right: 5px;
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
+}
+.details :hover{
+  text-decoration: underline;
   cursor: pointer;
 }
+.dwload{
+  position: absolute;
+  top: 0;
+  right: 105px;
+  font-size: 28px;
+  padding: 20px 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
+  background-color: #575662;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+}
+.dwload :hover{
+  background: #39383e;
+}
+.closebtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 68px;
+  padding: 10px 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
+}
+.dwloadM{
+  position: absolute;
+  top: 0;
+  right: 70px;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: none;
+  color: white;
+  background: none;
+  background-color: #575662;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+.closebtnM{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  padding: 20px 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
 }
