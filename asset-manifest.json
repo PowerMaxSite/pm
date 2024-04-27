@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/react-site-one/static/css/main.c21f376d.css",
-    "main.js": "/react-site-one/static/js/main.8e36facf.js",
+    "main.css": "/react-site-one/static/css/main.e9acada5.css",
+    "main.js": "/react-site-one/static/js/main.a296a2a1.js",
     "static/media/peelS.png": "/react-site-one/static/media/peelS.ec1eac2d31c63eb639a6.png",
     "static/media/saturatedPaper.png": "/react-site-one/static/media/saturatedPaper.e4cb0fe2b022c554555b.png",
+    "static/media/bw80Pic.png": "/react-site-one/static/media/bw80Pic.fbbce6babfe50d9e67a3.png",
+    "static/media/cp80pPic.png": "/react-site-one/static/media/cp80pPic.d6901d3bf13fab024503.png",
     "static/media/flagSrb.png": "/react-site-one/static/media/flagSrb.fd21a466d21fd9e377ce.png",
     "static/media/krem.png": "/react-site-one/static/media/krem.6b9fb6f6beb9bd0c2d5d.png",
     "static/media/TransferPaper2.png": "/react-site-one/static/media/TransferPaper2.4496d3f1a43dd2eb8ef2.png",
+    "static/media/80BW.pdf": "/react-site-one/static/media/80BW.7ddee4f37363c13bc9f9.pdf",
     "static/media/grSheets.png": "/react-site-one/static/media/grSheets.4dda3daa3ebcba22d617.png",
     "static/media/divHome.png": "/react-site-one/static/media/divHome.c5104bc38637beac8df6.png",
+    "static/media/TransferPaper4.png": "/react-site-one/static/media/TransferPaper4.f6b1b0736c13c2c80c4f.png",
     "static/media/scrll.png": "/react-site-one/static/media/scrll.5ffb5406e904ee35e696.png",
     "static/media/flagEng.png": "/react-site-one/static/media/flagEng.d629e0e05d763ab2b698.png",
     "index.html": "/react-site-one/index.html",
-    "main.c21f376d.css.map": "/react-site-one/static/css/main.c21f376d.css.map",
-    "main.8e36facf.js.map": "/react-site-one/static/js/main.8e36facf.js.map"
+    "main.e9acada5.css.map": "/react-site-one/static/css/main.e9acada5.css.map",
+    "main.a296a2a1.js.map": "/react-site-one/static/js/main.a296a2a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c21f376d.css",
-    "static/js/main.8e36facf.js"
+    "static/css/main.e9acada5.css",
+    "static/js/main.a296a2a1.js"
   ]
 }
