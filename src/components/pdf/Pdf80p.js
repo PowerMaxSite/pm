@@ -2,7 +2,7 @@ import { FaDownload} from 'react-icons/fa';
 import { useState,useEffect } from 'react';
 import secound from '../pics/cp80pPic.png';
 import "../css/Modal.css";
-import pdf80p from '../pics/80BW.pdf'
+import pdf80p from '../pdfs/80P.pdf'
 
 const Pdf80p = () => {
   const openModal = () => {
@@ -32,11 +32,11 @@ const Pdf80p = () => {
       <div id="80p" className="modal" onClick={closeModal}>
         <div className="modal-content animate" >
           {!isMobile ? (
-            <a href={pdf80p} download="80BW" target="_blank" rel="noreferrer" className='custom-link2'>
+            <a href={pdf80p} download="80P" target="_blank" rel="noreferrer" className='custom-link2'>
           <button className="dwload" href={pdf80p} download={"pdf80p"}>
               <b style={{fontSize: '20px'}}>Download&nbsp;</b><FaDownload/></button></a>
           ):(
-            <a href={pdf80p} download="80BW" target="_blank" rel="noreferrer" className='custom-link2'>
+            <a href={pdf80p} download="80P" target="_blank" rel="noreferrer" className='custom-link2'>
             <button className="dwloadM">
                 <b style={{fontSize: '20px'}}>Download&nbsp;</b><FaDownload/></button></a>
           )};

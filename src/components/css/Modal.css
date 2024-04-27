@@ -67,9 +67,10 @@
   margin-top: 15px;
 
 }
-.dwload :hover{
-  background: #39383e;
+.dwload:hover{
+  background: #383a44;
 }
+
 .closebtn{
   position: absolute;
   top: 0;
@@ -81,6 +82,10 @@
   background: none;
   cursor: pointer;
 }
+.closebtn:hover{
+  color: rgb(233, 94, 94);
+}
+
 .dwloadM{
   position: absolute;
   top: 0;

@@ -22,27 +22,35 @@ return(
 
   <h1 style={{textAlign: 'center'}}>{language === 'en' ? 'About us' : 'O Nama'}</h1>
 
-      <div className='container' style={{marginTop: '10px'}}>
-        <p style={{fontFamily: 'sans-serif',fontSize: '25px'}}>{language === 'en' ? 'Company' : 'Kompanija'} <b>Powermax DOO Backa Palanka</b> 
-        {language === 'en' ? ' is established 2007. year in Backa Palanka with goal of producing highest quality siliconised paper' :
-         ' je osnovana 2007. godine u Backoj Palanci sa ciljem proizvodnje visoko kvalitetnog silikonizovanog papira'}.<br/><br/>
+  <div className='container' style={{ marginTop: '10px' }}>
+  <p style={{ fontFamily: 'sans-serif', fontSize: '25px', lineHeight: '1.5' }}>
+    {language === 'en' ? 'Company' : 'Kompanija'} <b>Powermax DOO Backa Palanka</b>
+    {language === 'en' ? ' is established in 2007 in Backa Palanka with the goal of producing the highest quality siliconised paper.' :
+      ' je osnovana 2007. godine u Bačkoj Palanci sa ciljem proizvodnje visokokvalitetnog silikonizovanog papira.'}
+    <br /><br />
 
-                 {language === 'en' ? 'Our company can boast with constant and high quality siliconisation of paper.Products of our company are used across Europe and EU in more than 20 countries' :
-         'Nasa kompanija moze da se pohvali sa konstantnim i visokim kvalitetom silikonizovanog papira. Proizvodi nase kompanije su rasprostranjeni sirom zemalja Evrope i EU u preko 20 zemalja.'}.
+    {language === 'en' ? 'Our company boasts constant high-quality siliconisation of paper. Our products are used across Europe and the EU in more than 20 countries.' :
+      'Naša kompanija se može pohvaliti konstantnim i visokim kvalitetom silikonizacije papira. Proizvodi naše kompanije koriste se širom Evrope i EU u više od 20 zemalja.'}
+    <br /><br />
 
-{language === 'en' ? 'Our products are subject to certificates with ecological marks such as:' :
-         'Nasi proizvodi podlezu sertifikatima sa ekoloskim normama kao sto su:'}<br/><br/>
+    {language === 'en' ? 'Our products are certified with ecological marks such as:' :
+      'Naši proizvodi su sertifikovani sa ekološkim oznakama kao što su:'}
+    <br /><br />
 
-        {language === 'en' ? 'Gained quality constantly gets upgraded following modern trends and listening to requests of our customers.' :
-         'Stečeni kvalitet konstantno usavršavamo prateći savremene trendove i slušajući zahteve nasih korisnika.'}<br/><br/>
+    {language === 'en' ? 'We constantly upgrade our quality following modern trends and listening to the requests of our customers.' :
+      'Konstantno unapređujemo kvalitet prateći savremene trendove i slušajući zahteve naših korisnika.'}
+    <br /><br />
 
-{language === 'en' ? 'For every product we give guarantee pereiod,which makes our customers care-free.' : 
-'Za sve proizvode dajemo garantni rok čime su naši korisnici osigurani.'}<br/><br/>
+    {language === 'en' ? 'For every product, we provide a guarantee period, ensuring peace of mind for our customers.' :
+      'Za sve proizvode pružamo garanciju, što našim kupcima omogućava bezbrižnost.'}
+    <br /><br />
 
-{language === 'en' ? 'Customizable siliconization per your request.' : 
-'Mogucnost silikonizacije po vasem zahtevu.'}<br/><br/>
- </p>
-      </div><br/>
+    {language === 'en' ? 'Customizable siliconization according to your request.' :
+      'Silikonizacija po vašem zahtevu.'}
+    <br /><br />
+  </p>
+</div>
+
       </>
 );
 }

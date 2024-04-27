@@ -2,7 +2,7 @@ import { FaDownload} from 'react-icons/fa';
 import { useState,useEffect } from 'react';
 import first from '../pics/bw80Pic.png';
 import "../css/Modal.css";
-import pdf80 from '../pics/80BW.pdf'
+import pdf80 from '../pdfs/80BW.pdf'
 
 const Pdf80bw = () => {
   const openModal = () => {

@@ -4,9 +4,12 @@ import mail from './pics/email.png'
 import addres from './pics/location.png'
 import linkedin from './pics/linkedin.png'
 import './css/Contact.css';
+import ContactForm from '../ContactForm';
+import { useState } from 'react';
 
 
 const Contact = ({ language, toggleLanguage,isMobile}) => {
+
 return (
   <>
   <h1 style={{paddingLeft: '30px',color: '#24569b'}}>{language === 'en' ? 'Contact Us' : 'Kontaktirajte Nas'}</h1>
@@ -86,21 +89,21 @@ return (
   <div className='my-div' style={{'margin': isMobile ? '0px 5px' : '0px 50px'}}>
     <div className='upit'>
       <h2 style={{display: 'flex', justifyContent: 'center'}}>{language === 'en' ? 'Direct Contact' : 'Direktan Kontakt'}</h2>
-  <form>
-    <label for="username">{language === 'en' ? 'Name' : 'Ime'}:</label><br/>
-    <input type="text" id="username" name="username" placeholder={language === 'en' ? 'Name' : 'Ime'}></input><br/>
-    <label for="email">E-mail:</label><br/>
-    <input type="email" id="email" name="email" cols="40" placeholder={language === 'en' ? "You'r mail" : 'Vas mail'}></input><br/>
-    <label for="comments">{language === 'en' ? 'Message' : 'Poruka'}:</label><br/>
-    <textarea id="comments" name="comments" rows="4" cols="40" placeholder={language === 'en' ? "You'r message" : 'Vas upit'}></textarea>
-</form>
-<button className='button'>{language === 'en' ? 'Send' : 'Posalji'}</button>
-{/* onClick={alert("Thank you for submitting questions. We will get back to you shortly.")} */}
+      <form>
+        <label htmlFor="username">{language === 'en' ? 'Name' : 'Ime'}:</label><br/>
+        <input type="text" id="username" name="username" placeholder={language === 'en' ? 'Name' : 'Ime'} /><br/>
+        <label htmlFor="email">E-mail:</label><br/>
+        <input type="email" id="email" name="email" cols="40" placeholder={language === 'en' ? "Your mail" : 'Vaš mail'} /><br/>
+        <label htmlFor="comments">{language === 'en' ? 'Message' : 'Poruka'}:</label><br/>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder={language === 'en' ? "Your message" : 'Vaš upit'}></textarea>
+        <button className='button' type="submit">{language === 'en' ? 'Send' : 'Pošalji'}</button>
+      </form>
+    </div>
 </div>
     </div>
 
   
-</div>
+
 <br/>
 </>
 );
